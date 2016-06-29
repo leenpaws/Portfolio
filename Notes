@@ -1,0 +1,93 @@
+how an engineer would do it:
+1. pick out boxes
+2.
+
+
+
+using @ media query vs. linked css
+@media=few big http requests
+    example: "
+    @media screen and (max-width: 400 px){
+        body { backgroud-color: red;}
+        }
+        "
+
+linked css=many small http requests
+
+make sure you have img, embed, object, video {
+    max-width: 100%
+    }
+
+    look at content to look at breakpoints:
+
+
+flexbox: default is row, add flex-wrap:wrap to have it go to next line
+column drop:
+
+layout shifter-most responsive layout
+
+hidden columns: hides columns based on their importance and screen size
+
+ no more tables, and
+
+
+Grid based layout framework:
+framework=collections of css classes that make layout easy to implement
+
+responsive web pages:
+ resolution of screen in pixels to ensure uniformity across all screens
+ size of certain aspects changes as size of screen changes
+
+look up flex-wrap:wrap:
+it makes columns align next to each other if their width is defined
+
+negative space: added using padding, margin
+padding on inside, margin on outside
+
+overflow: text can scroll: "overflow: auto"
+overflow is useful for small area
+
+media specific css:
+"@media only screen and (max-width: 300px) {
+    p {
+    background-color: blue;
+    display: none;"
+    }
+}
+
+https://developer.chrome.com/devtools/docs/device-mode
+
+css resetting:
+css normalize, look at normalize.css, simply link to normalize css
+
+https://www.google.com/fonts
+
+
+Video: Choosing A Framework
+Bootstrap: http://getbootstrap.com/
+Foundation: http://foundation.zurb.com/
+Yaml: http://www.yaml.de/
+960 Grid: http://960.gs/
+Suzy: http://susy.oddbird.net/
+
+minified css files
+
+Video: Minified CSS Files
+To use the Bootstrap files in your project just copy the css and
+ js folders to your project folder. Don't forget to include the
+ files in your head element:
+<link rel="stylesheet" href="css/bootstrap.min.css"> <script src="js/bootstrap.min.js"></script>
+
+NOTE: CSS minification does not happen automatically by default,
+therefore if you edit your unminified CSS file,
+but include the minified version in your HTML,
+the page will not use the updated CSS by default.
+You can manually minify your CSS using a site like http://cssminifier.com/.
+You can also use a more advanced and automated workflow where CSS files get
+ minimized automatically, for example using a plugin for your code editor or
+ a build system like Gruntjs.
+
+grid system: rows in .container,
+
+
+
